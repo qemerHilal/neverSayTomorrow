@@ -1,0 +1,48 @@
+body{
+    background-image:url("./images/backgroundImage.jpg");
+   background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    background-color: black;
+    padding:0;
+    margin:0;
+}
+
+.menu{
+    overflow: hidden;
+    background-color: orange;
+    display:flex;
+   
+
+}
+.menu a{
+    padding:20px;
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color:black;
+    grid-area: menu;
+}
+.bars{
+    position:absolute;
+    float:right;
+    right:0;
+}
+.gallery
+{
+    display:flex;
+    grid-area: galPic;
+}
+.gridContainer{
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 'menu menu menu menu'
+    'galPic galPic galPic galPic';
+    gap: 20px;
+}
