@@ -29,7 +29,7 @@ body{
     background-color:black;
     grid-area: menu;
 }
-.bars{
+#bars{
     position:absolute;
     float:right;
     right:0;
