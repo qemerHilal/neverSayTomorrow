@@ -14,6 +14,7 @@ body{
     overflow: hidden;
     background-color: orange;
     display:flex;
+    grid-area: menu;
    
 
 }
@@ -37,12 +38,31 @@ body{
 {
     display:flex;
     grid-area: galPic;
+
 }
 .gridContainer{
-    display: grid;
-    max-width: 1000px;
-    grid-template-columns: repeat(4,1fr);
+    display: grid;    
+    grid-template-columns: repeat(4,auto);
     grid-template-areas: 'menu menu menu menu'
     'galPic galPic galPic galPic';
     gap: 20px;
+    margin:auto auto;
+
+}
+
+.gallery
+{
+  overflow: hidden;
+}
+ .content {
+    background-color: white;
+    
+
+}
+.content a{
+    text-decoration: none;
+    padding:20px;
+    font-size:20px;
+    font-weight:bold;
+    
 }
