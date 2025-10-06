@@ -1,13 +1,7 @@
 function hamMenu()
 {
-    const cc=document.getElementById("bars");
-   if(cc.className!="")
-    {
-      cc.classList.toggle("show");
-      
-    } 
-    else{
-        //do nothing
-    }
-
+    const cc=document.querySelector(".menu")
+ 
+     cc.classList.toggle("show");
+   
 }

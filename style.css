@@ -1,3 +1,5 @@
+
+
 body{
     background-image:url("./images/backgroundImage.jpg");
    background-repeat: no-repeat;
@@ -9,37 +11,6 @@ body{
     padding:0;
     margin:0;
 }
-
-.menu{
-    overflow: hidden;
-    background-color: orange;
-    display:flex;
-    grid-area: menu;
-   
-
-}
-.menu a{
-    padding:20px;
-    font-size:30px;
-    font-weight:bold;
-    color:white;
-    text-decoration: none;
-}
-.menu a:hover{
-    background-color:black;
-    grid-area: menu;
-}
-#bars{
-    position:absolute;
-    float:right;
-    right:0;
-}
-.gallery
-{
-    display:flex;
-    grid-area: galPic;
-
-}
 .gridContainer{
     display: grid;    
     grid-template-columns: repeat(4,auto);
@@ -49,6 +20,41 @@ body{
     margin:auto auto;
 
 }
+
+.menu{
+    overflow: hidden;
+    background-color: orange;
+   grid-area: menu;
+   }
+.menu a{
+    
+    float:left;
+    display:block;
+    padding:20px;
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color:black;
+    grid-area: menu;
+}
+
+
+.menu a.icon{
+   display:none;
+   
+}
+   
+.gallery
+{
+    display:flex;
+    grid-area: galPic;
+
+}
+
 
 .gallery
 {
@@ -64,5 +70,38 @@ body{
     padding:20px;
     font-size:20px;
     font-weight:bold;
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+   .menu a{
+            display: none;           
+    }
+        
+    .menu a.icon{ 
+        position:absolute;
+          display:block;
+          float:right;
+         
+          right:0;
+          top:0;
+            
+        background-color: black;
+
+    } 
+}
+
+@media screen and (max-width:600px){
+   
+
+    .menu.show a{
+        display: block;
+        float:none;
+        
+        
+    }
+   
     
 }
